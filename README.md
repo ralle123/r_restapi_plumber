@@ -37,6 +37,7 @@ example_data_json <- '[{"carat":0.53,"cut":"Premium","color":"D","clarity":"SI1"
 >http://127.0.0.1:7000/predict2?z=3.17&y=5.22&x=5.18&table=58&depth=61&clarity=SI1&color=D&cut=Premium&carat=0.53%22%20-H%20%20%22accept:%20application/json
 
 > http://localhost:8000/predict_price?data=%5B%7B%22carat%22%3A0.53%2C%22cut%22%3A%22Premium%22%2C%22color%22%3A%22D%22%2C%22clarity%22%3A%22SI1%22%2C%22depth%22%3A61%2C%22table%22%3A58%2C%22x%22%3A5.18%2C%22y%22%3A5.22%2C%22z%22%3A3.17%7D%5D
+
 ![predict_price result](https://github.com/ralle123/r_restapi_plumber/blob/master/images/predict_price_output.png)
 
 >curl -X GET "http://127.0.0.1:7001/predict_price?new_data=%5B%7B%22carat%22%3A0.53%2C%22cut%22%3A%22Premium%22%2C%22color%22%3A%22D%22%2C%22clarity%22%3A%22SI1%22%2C%22depth%22%3A61%2C%22table%22%3A58%2C%22x%22%3A5.18%2C%22y%22%3A5.22%2C%22z%22%3A3.17%7D%5D" -H  "accept: application/json"
